@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Happy Birthday</title>
+    <style>
+      .body {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  height: 100vh;
+  background-color: #acdae9;
+  padding-top: 4000px;
+}
+.birthdayCard {
+  position: sticky;
+  width: 250px;
+  height:250px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition-duration: 2s;
+  margin-left: 300px;
+  margin-top: 30px;
+}
+.birthdayCard:hover {
+  transform: perspective(2500px) rotate(5deg);
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2),
+    0 10px 100px rgba(0, 0, 0, 0.5);
+}
+.birthdayCard:hover .cardFront{
+  transform: rotatey(-160deg);
+  
+}
+.birthdayCard:hover.image{
+  visibility:hidden;
+}
+.balloons {
+  position: absolute;
+}
+
+
+.cardFront {
+  position: relative;
+  background-color: #fff;
+  width: 350px;
+  height: 500px;
+  overflow: hidden;
+  transform-origin: left;
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2),
+    30px 0 50px rgba(0, 0, 0, 0.4);
+  transition:2s;
+}
+.cardmiddle {
+  position:absolute;
+  background-color: #fff;
+  width: 350px;
+  height: 500px;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  transform-origin: left;
+  transition: 2s;
+}
+
+
+
+
+  
+  
+
+.happy {
+  font-family: Tahoma, sans-serif;
+  text-align: center;
+  margin: 30px;
+  background-image: linear-gradient(120deg, #ffd856 0%, #f98c6e 100%);
+}
+
+  
+p {
+  font-family:"Brush Script MT";
+  margin: 5px;
+  color: #333;
+}
+.name {
+  position: absolute;
+  left: 250px;
+  top: 450px;
+  color: #333;
+}
+.back {
+  
+  color: #333;
+  text-align: center;
+  margin: 30px;
+  outline-color: #333;
+}
+.image{
+  
+  object-fit: contain; 
+}
+
+    </style>
+  </head>
+  <body background="download.jpg">
+    <div class="birthdayCard">
+      
+      <div class="cardFront">
+        <image class="image" src="jude.jpg"></image>
+        <div class="balloons">
+        
+
+        </div>
+      </div>
+      <div class="cardmiddle">
+        <h3 class="back">HAPPY BIRTHDAY</h3>
+
+        <p>To my love</p>
+        <p >Happy 22nd birthday, Jude. On this special day, I wanted to take a moment to express how much you mean to me. Your presence in my life has brought so much joy and happiness, and I feel incredibly lucky to have you by my side.
+
+          Jude, you are not only beautiful on the outside but also on the inside. Your kindness, compassion, and loving nature never fail to touch my heart. Every moment spent with you feels like a dream come true, and I cherish every second we share together.
+          
+          As we celebrate your birthday, I want you to know that my love for you grows stronger with each passing day. You bring out the best in me, and I am grateful for the love and support you give me unconditionally. You are my rock, my partner, and my best friend.
+          
+          On this special day, I wish you all the happiness, love, and success that life has to offer. May your dreams come true, and may this year be filled with unforgettable moments and beautiful memories. I will be right by your side, cheering you on every step of the way.
+          
+          Happy birthday, my love. You deserve all the love and happiness in the world.
+          
+          With all my love,</p>
+        
+        <p class="name">sheryl</p>
+
+      </div>
+    </div>
+  
+
+    </div>
+  </body>
+</html>
